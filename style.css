@@ -1,0 +1,27 @@
+/* Cascating Stylesheet*/
+/* exemplo de código CSS aqui */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: #20002c;
+background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);
+background: linear-gradient(to right, #cbb4d4, #20002c); 
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+a {
+  color: lightgray;
+  text-decoration: none;
+}
+
+footer {
+  color: whitesmoke;
+}
