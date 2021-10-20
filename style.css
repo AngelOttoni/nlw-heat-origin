@@ -1,28 +1,87 @@
 /* Cascating Stylesheet*/
 /* exemplo de código CSS aqui */
+* {
+  margin: 0;
+}
+
 html,
 body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
   height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   display: grid;
   place-items: center;
-  background: #20002c;
-  background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);
-  background: linear-gradient(to right, #cbb4d4, #20002c);
+}
+
+main {
+background: url(images/background.png);
+width: 375px;
+height: 812px;
+}
+
+.container {
+  max-width: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--grey);
+}
+
+.avatar {
+  width: 11.5rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -20px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 11.5rem;
+  height: 12rem;
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
 h1 {
   font-size: 1.5rem;
-  color: white;
+  margin-top: 1.5rem;
 }
 
 a {
-  color: lightgray;
+  color: var(--grey);
   text-decoration: none;
+  margin-top: 0.25rem;
+  display: flex;
+  gap: 0.50rem;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
 }
 
 footer {
-  color: whitesmoke;
+  display: grid;
+  place-items: center;
+  margin-top: 150px;
+  color: var(--grey);
+  font-size: small;
 }
