@@ -19,7 +19,7 @@ body {
 }
 
 main {
-background: url(images/background.png);
+background: url(images/background.svg);
 width: 375px;
 height: 812px;
 }
@@ -32,20 +32,21 @@ height: 812px;
 }
 
 .avatar {
-  width: 11.5rem;
+  width: 10rem;
   margin: 11.5rem auto 0;
   position: relative;
 }
 
 .avatar span {
   position: absolute;
-  top: -20px;
+  left: -15px;
+  top: -25px;
   z-index: 1;
 }
 
 .avatar > img {
-  width: 11.5rem;
-  height: 12rem;
+  width: 10rem;
+  height: 11.5rem;
   object-fit: cover;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
@@ -53,6 +54,7 @@ height: 812px;
 h1 {
   font-size: 1.5rem;
   margin-top: 1.5rem;
+  text-align: center;
 }
 
 a {
@@ -67,6 +69,7 @@ a {
 
 p {
   margin-top: 2rem;
+  text-align: center;
 }
 
 ul {
